@@ -53,7 +53,7 @@
       "value": ""
     },
     "TRUE_OR_FALSE": {
-      "description": "Set False off else True for  Shortlink",
+      "description": "Set False off else True for Shortlink",
       "value": "False"
     },
     "SHORT_DOMAIN": {
@@ -69,18 +69,13 @@
       "value": ""
     }
   },
-  "addons": [
-  ],
-  "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  }, {
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "eco"
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
     }
-  }
+  ]
 }
-
